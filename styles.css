@@ -1,0 +1,979 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(121, 135, 125, 1);
+}
+
+body, html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+body {
+  position: relative;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+.content {
+  display: block;
+  margin-top: 110px;
+}
+
+.hero {
+  margin-bottom: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color:rgba(121, 135, 125, 1);
+  z-index: 500;
+}
+  
+.Logo_Navbar {
+  margin-right: auto;
+  padding-right: 20px;
+  max-height: 50px;
+  fill: rgba(255,241,226,1);
+  transition: fill 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+
+.Logo_Navbar path {
+  cursor: pointer;
+  margin-right: auto;
+  padding-right: 20px;
+  max-height: 50px;
+  fill: rgba(255,241,226,1);
+  transition: fill 0.3s ease-in-out;
+}
+
+.Logo_Navbar path:hover {
+  fill: #1f2620;
+}
+
+
+.nav__links a {
+
+  font-family: 'Author', sans-serif;
+  font-weight: 600;
+  color: rgba(255, 243, 226, 1);
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.a,
+.cta,
+.overlay__content a {
+
+  font-family: 'Author', sans-serif;
+  font-weight: 600;
+  color: rgba(121, 135, 125, 1);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+  
+.nav__links li a {
+  transition: color 0.3s ease 0;
+}
+
+.nav__links li a:hover {
+  color: #1f2620;
+}
+
+  
+.cta {
+  margin-left: 20px;
+  padding: 9px 20px;
+  background-color: rgba(255, 243, 226, 1);
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+  box-sizing: border-box;
+}
+
+.cta:hover {
+  color: rgba(255, 243, 226, 1);
+  background-color: rgba(121, 135, 125, 1);
+  border-color: rgba(255, 243, 226, 1);
+}
+
+.Logo_Titre {
+  position: absolute;
+  width: 100%;
+  margin-top: -250px;
+  margin-left: 5px;
+  margin-right: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(255, 243, 226, 1);
+  z-index: 10;
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
+.Logo_Titre span {
+  background-color: transparent;
+}
+
+.Joey_Morel {
+  font-family: 'Lora', serif;
+  font-size: 80px;
+  background-color: transparent;
+}
+
+.Graphiste__Photographe {
+  font-family: 'Author', serif;
+  font-weight: 500;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+.Image1 {
+  position: relative;
+  height: 600px; 
+  left: 65%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.Image2 {
+  position: relative;
+  height: 450px; 
+  margin-top: -250px;
+  left: 35%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.square-box {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.square-box img:hover {
+  transition: filter 0.3s ease-in-out;
+}
+
+.square-box img:hover {
+  filter: brightness(70%);
+}
+
+.square-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.box-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: rgba(255, 243, 226, 1);
+  margin-bottom: 100px;
+  background-color: transparent;
+}
+
+.CTA_page {
+  width: 100%;
+  background-color: rgba(255, 243, 226, 1);
+  color: rgba(121, 135, 125, 1);
+  text-align: center;
+  padding: 50px 25px;
+  box-sizing: border-box;
+}
+
+.CTA_page span {
+  background-color: transparent;
+}
+
+.savoirplus {
+  font-family: 'Author', serif;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+.Jettez {
+  font-family: 'Lora', serif;
+  font-size: 35px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.square {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 243, 226, 1);
+  margin-top: 0px;
+}
+
+.button-container a{
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.ctaButton {
+  padding: 9px 20px;
+  background-color: rgba(121, 135, 125, 1);
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+  box-sizing: border-box;
+  color: rgba(255, 243, 226, 1);
+  font-family: 'Author', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.ctaButton:nth-child(1) {
+  margin-right: 10px;
+}
+
+.ctaButton:nth-child(2) {
+  margin-left: 10px;
+}
+
+.ctaButton:hover {
+  color: rgba(121, 135, 125, 1);
+  background-color: rgba(255, 243, 226, 1);
+  border-color: rgba(121, 135, 125, 1);
+}
+
+.footer {
+  position: relative;
+  text-align: left;
+  background-color: #1f2620;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer .social-icon{
+  margin: 10px;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+.footer .social-icon i{
+  background-color: transparent;
+}
+
+
+
+.footer .column {
+  background-color: transparent;
+  flex: 1;
+  max-width: 300px;
+  margin: 0px 50px;
+}
+
+.Logo_Footer {
+  width: 100%;
+  margin-right: auto;
+  padding-right: 20px;
+  max-height: 50px;
+  fill: rgba(255, 241, 226, 1);
+  background-color: transparent;
+  transition: fill 0.3s ease 0s;
+}
+
+.Logo_Footer path {
+  cursor: pointer;
+  width: 100%;
+  margin-right: auto;
+  padding-right: 20px;
+  max-height: 50px;
+  fill: rgba(255, 241, 226, 1);
+  background-color: transparent;
+  transition: fill 0.3s ease 0s;
+}
+
+.Logo_Footer path:hover {
+  fill: rgba(121, 135, 125, 1);
+}
+
+.footer h3, .footer ul, .footer li, .footer a {
+  background-color: transparent;
+  color: rgba(255, 241, 226, 1);
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.footer ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 24px;
+  transition: color 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.footer h3:hover {
+  color: rgba(121, 135, 125, 1);
+}
+
+.footer a {
+  color: rgba(255, 241, 226, 1);
+  text-decoration: none;
+  font-family: 'Author', sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 18px;
+  transition: color 0.3s ease 0s;
+}
+
+.footer a:hover {
+  color: rgba(121, 135, 125, 1);
+}
+
+.credits {
+  position: absolute;
+  background-color: transparent;
+  bottom: 15px;
+  left: 20px;
+  font-family: 'Author', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 241, 226, 1);
+  opacity: 60%;
+}
+
+.credits span {
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1600px) {
+  .Logo_Titre {
+    margin-top: -225px;    }
+
+  .Image1 {
+    height: 525px; 
+    left: 65%;
+  }
+  
+  .Image2 {
+    height: 400px; 
+    left: 35%;
+    margin-top: -225px;
+  }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+  .Joey_Morel {
+    font-size: 70px;
+}
+
+.Graphiste__Photographe {
+    font-size: 28px;
+}
+
+.Logo_Titre {
+  margin-top: -175px;    }
+
+.Image1 {
+  height: 475px; 
+  left: 65%;
+}
+
+.Image2 {
+  height: 350px; 
+  left: 35%;
+  margin-top: -185px;
+}
+  
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .Logo_Titre {
+    margin-top: -175px;
+  }
+
+  .Joey_Morel {
+    font-size: 60px;
+}
+
+.Graphiste__Photographe {
+    font-size: 22px;
+}
+
+.Image1 {
+  height: 450px; 
+  left: 65%;
+}
+
+.Image2 {
+  height: 325px; 
+  left: 35%;
+  margin-top: -190px;
+}
+
+.square-box {
+  width: 500px;
+  height: 500px;
+}
+
+.footer .column {
+  margin: 0 20px;
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1175px) {
+  .Logo_Titre {
+    margin-top: -135px;
+  }
+
+  .Joey_Morel {
+    font-size: 60px;
+}
+
+.Graphiste__Photographe {
+    font-size: 22px;
+}
+
+.Image1 {
+  height: 400px; 
+  left: 65%;
+}
+
+.Image2 {
+  height: 275px; 
+  left: 35%;
+  margin-top: -150px;
+}
+
+.square-box {
+  width: 450px;
+  height: 450px;
+}
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+.Image1 {
+  left: 68%;
+}
+
+.Image2 {
+  left: 33%;
+  margin-top: -150px;
+}
+
+.square-box {
+  width: 400px;
+  height: 400px;
+}
+
+.footer {
+  padding: 60px 30px;
+}
+
+}
+
+
+@media only screen and (max-width: 850px) {
+
+  .Image1 {
+  height: 350px;  
+  left: 72%;
+}
+  
+  .Image2 {
+    height: 250px;
+    margin-top: -150px;
+    left: 35%;
+  }
+
+  .Logo_Titre {
+    margin-top: -130px;
+  }
+
+  .Joey_Morel {
+    font-size: 55px;
+  }
+
+  .Graphiste__Photographe {
+    font-size: 20px;
+  }
+
+  .square-box {
+    width: 325px;
+    height: 325px;
+  }
+ 
+  .footer .column:nth-child(2) {
+    display: none;
+}
+
+.footer .column:nth-child(2) {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.footer .column:nth-child(3) {
+  margin-right: 0px;
+  margin-left: 0px;
+}  
+
+  .content {
+    margin-top: 90px;
+  }
+
+}
+
+
+@media only screen and (max-width: 725px) {
+
+  .Image1 {
+  height: 300px;  
+  left: 72%;
+}
+  
+  .Image2 {
+    height: 225px;
+    margin-top: -100px;
+    left: 35%;
+  }
+
+  .Logo_Titre {
+    margin-top: -75px;
+  }
+
+  .square-box {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  .square-box {
+    width: 500px;
+    height: 500px;
+    margin: 10px 0px;
+  }
+
+  .image-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Image1 {
+  height: 250px;  
+  left: 72%;
+}
+  
+  .Image2 {
+    height: 175px;
+    margin-top: -25px;
+    left: 35%;
+  }
+
+  .Logo_Titre {
+    margin-top: -30px;
+  }
+
+  .footer .column:nth-child(3) {
+    display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 575px) {
+
+  .square-box {
+    width: 400px;
+    height: 400px;
+  }
+
+  .footer .column:nth-child(2) {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .square-box {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+
+  .square-box img {
+
+    border-radius: 0px;
+  }
+
+  .box-title {
+    font-size: 28px;
+  }
+
+  .Joey_Morel {
+    font-size: 40px;
+  }
+
+  .Graphiste__Photographe {
+    font-size: 16px;
+  }
+
+  .hero {
+    justify-content: end;
+  }
+
+  .Image1 {
+    align-self: self-end;
+}
+
+  
+  .Image2 {
+    left: 131px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+      
+  .footer .column:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+.footer {
+  flex-direction: column;
+}
+
+.footer .column:nth-child(1) {
+  margin-bottom: 30px;
+}
+  
+.Logo_Footer {
+  padding: 0px;
+}
+
+.image-container{
+  margin-bottom: 30px;
+}
+
+.ctaButton:nth-child(1) {
+  margin-right: 5px;
+}
+
+.ctaButton:nth-child(2) {
+  margin-left: 5px;
+}  
+
+.hero {
+  margin-bottom: 30px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 325px) {
+
+  .square-box {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+
+  .box-title {
+    font-size: 28px;
+  }
+  
+  .button-container {
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .ctaButton {
+    width: fit-content;
+   }
+
+  .image-container{
+    margin-bottom: 10px;
+    }
+  
+  .savoirplus {
+    font-size: 18px;
+  }
+
+  .Jettez {
+    font-size: 28px;
+  }
+
+  .ctaButton:nth-child(1) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+    
+  .ctaButton:nth-child(2) {
+    margin-left: 0px;
+  }  
+
+  .square {
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }  
+
+}
+
+
+@media only screen and (max-width: 300px) {
+
+  .image-container{
+  margin-bottom: 0px;
+  }
+
+}
+
+
+
+
+
+  
+  /* Mobile Nav */
+  
+  .hamburger-menu {
+    display: none;
+    fill: rgba(255, 243, 226, 1);
+    height: 30px;
+    transition: fill 0.3s ease-in-out;
+
+  }
+
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    background-color: #1f2620;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay--active {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    display: block;
+    color: rgba(255, 243, 226, 1);
+    transition: color 0.3s ease 0s;
+    background-color: transparent;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: rgba(121, 135, 125, 1);
+  }
+
+  .overlay .close {
+    position: fixed;
+    margin-top: 23px;
+    margin-right: 9%;
+    padding: 5px;
+    fill: rgba(255, 243, 226, 1);
+    background-color: transparent;
+    top: 0px;
+    margin-bottom: 0px;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: fill 0.3s ease 0s;
+  }
+
+  .overlay .close svg {
+    background-color: transparent;
+  }
+
+  .overlay .close:hover {
+    fill: rgba(121, 135, 125, 1);
+  }
+
+  
+  .cta-overlay:nth-child(4) {
+    margin-top: 12px;
+    padding: 12px 30px;
+    color: #1f2620;
+    background-color: rgba(255, 243, 226, 1);
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+    box-sizing: border-box;
+  }
+  
+
+  .cta-overlay:nth-child(4):hover {
+    color: rgba(255, 243, 226, 1);
+    background-color: #4B4E4C;
+    border-color: rgba(255, 243, 226, 1);
+}
+
+.overlay .icons {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  margin: 20px 0px;
+  width: auto;
+}
+
+.overlay .icons a i {
+  background-color: transparent;
+}
+
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .hamburger-menu {
+      display: initial;
+    }
+
+    header {
+      padding: 20px 10%;
+      }  
+
+  }
+
+  .hamburger-menu {
+    margin-left: 10%;
+    cursor: pointer;
+    transition: fill 0.3s ease 0s;
+  }
+
+  .hamburger-menu:hover {
+    fill: #4B4E4C;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #1f2620;
+  }
