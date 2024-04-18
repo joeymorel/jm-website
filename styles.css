@@ -193,7 +193,6 @@ header {
 
 .square-box img:hover {
   transition: filter 0.3s ease-in-out;
-    filter: brightness(90%);
 }
 
 .square-box img:hover {
@@ -205,6 +204,7 @@ header {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  filter: brightness(90%);
 }
 
 .box-title {
