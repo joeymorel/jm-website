@@ -211,6 +211,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Lora', serif;
   font-size: 35px;
   color: rgba(255, 243, 226, 1);
   margin-bottom: 100px;
