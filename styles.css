@@ -193,10 +193,11 @@ header {
 
 .square-box img:hover {
   transition: filter 0.3s ease-in-out;
+    filter: brightness(90%);
 }
 
 .square-box img:hover {
-  filter: brightness(70%);
+  filter: brightness(60%);
 }
 
 .square-box img {
