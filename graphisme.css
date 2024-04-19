@@ -79,6 +79,7 @@ header a {
   max-height: 50px;
   fill: rgba(255,241,226,1);
   transition: fill 0.3s ease-in-out;
+  overflow: visible;
 }
 
 .Logo_Navbar path:hover {
