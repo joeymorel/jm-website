@@ -642,7 +642,7 @@ header {
   .square-box {
     width: 500px;
     height: 500px;
-    margin: 10px 0px;
+    margin: 10px;
   }
 
   .image-container {
@@ -695,12 +695,6 @@ header {
   .square-box {
     width: 300px;
     height: 300px;
-    margin: 0;
-  }
-
-  .square-box img {
-
-    border-radius: 0px;
   }
 
   .box-title {
@@ -780,7 +774,6 @@ header {
   .square-box {
     width: 300px;
     height: 300px;
-    margin: 0;
   }
 
   .box-title {
