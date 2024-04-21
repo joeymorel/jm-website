@@ -194,6 +194,8 @@ justify-content: center;
     background-color: transparent;
     color: rgba(255, 241, 226, 1);
     text-decoration: none;
+    font-family: 'Lora', serif;
+    font-weight: 500;
     margin-top: 5px;
 }
 
