@@ -16,6 +16,15 @@ body, html {
   overflow-x: hidden;
 }
 
+::selection {
+  color: rgba(121, 135, 125, 1);
+  background: #f4d59b;
+
+}
+
+::-moz-selection {
+    background: #f4d59b;
+}
 
 body {
   position: relative;
