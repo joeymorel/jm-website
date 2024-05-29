@@ -16,6 +16,17 @@ body, html {
   overflow-x: hidden;
 }
 
+::selection {
+  color: #1f2620;
+  background: #f4d59b;
+
+}
+
+::-moz-selection {
+    background: #1f2620;
+}
+
+
 
 body {
   position: relative;
