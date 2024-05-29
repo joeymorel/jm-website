@@ -17,13 +17,13 @@ body, html {
 }
 
 ::selection {
-  color: rgba(121, 135, 125, 1);
-  background: #f4d59b;
+  color: #f4d59b;
+  background: #1f2620;
 
 }
 
 ::-moz-selection {
-    background: #f4d59b;
+    background: #1f2620;
 }
 
 body {
