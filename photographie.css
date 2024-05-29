@@ -1007,6 +1007,11 @@ margin-bottom: 30px;
   margin-bottom: 10px;
 }
 
+.text-container h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+  
 .text-container p {
   font-size: 18px;
   margin-bottom: 10px;
