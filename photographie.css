@@ -398,6 +398,14 @@ background-color: transparent;
   background-color: transparent;
 }
 
+.services-left h1 {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(121, 135, 125, 1);
+  background-color: transparent;
+}
+
 .img-services {
   max-height: 500px;
   max-width: 400px;
