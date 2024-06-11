@@ -1256,6 +1256,10 @@ textarea {
     padding: 20px 10%;
 }
 
+    .Logo_Navbar path {
+    max-height: 30px;
+  }
+
 .infos {
     margin-top: 90px;
 }
