@@ -956,6 +956,10 @@ header {
     header {
       padding: 20px 10%;
       }  
+
+    .Logo_Navbar {
+    max-height: 50px;
+}
     
   .Logo_Navbar path {
     max-height: 30px;
