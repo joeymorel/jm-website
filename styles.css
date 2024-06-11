@@ -951,14 +951,15 @@ header {
     }
     .hamburger-menu {
       display: initial;
+      height: 25px;
     }
 
     header {
-      padding: 20px 10%;
+      padding: 18px 10%;
       }  
 
     .Logo_Navbar {
-    max-height: 50px;
+    max-height: 30px;
 }
     
   .Logo_Navbar path {
