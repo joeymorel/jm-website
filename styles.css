@@ -978,6 +978,10 @@ header {
   .Logo_Navbar path {
     max-height: 30px;
   }
+  
+  .content {
+    margin-top: 65px;
+  }
 
   }
 
