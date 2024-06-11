@@ -736,9 +736,9 @@ header {
   }
 
   .Image1 {
-    height: 250px;  
-    right: 72%; /* Adjust the position */
-    left: auto; /* Reset the left position */
+    height: 250px;
+    left: auto;
+    right: 0px; /* Set the right position to 0px */
   }
 
   
