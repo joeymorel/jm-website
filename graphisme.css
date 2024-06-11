@@ -737,6 +737,18 @@ height: 450px;
     max-width: 300px;
   }
 
+  header {
+    padding: 25px 10%;
+  }
+
+  .Logo_Navbar {
+    max-height: 40px;
+  }
+  
+  .Logo_Navbar path {
+    max-height: 40px;
+  }
+
   .text-container {
     margin: 75px;
   }
