@@ -1227,6 +1227,10 @@ margin-bottom: 0px;
     padding: 20px 10%;
     }  
 
+    .Logo_Navbar path {
+    max-height: 30px;
+  }
+
 }
 
 .hamburger-menu {
