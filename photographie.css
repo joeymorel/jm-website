@@ -1226,19 +1226,20 @@ margin-bottom: 0px;
   .cta {
     display: none;
   }
-  .hamburger-menu {
-    display: initial;
-  }
+    .hamburger-menu {
+      display: initial;
+      height: 25px;
+    }
 
-  header {
-    padding: 20px 10%;
-    }  
+    header {
+      padding: 18px 10%;
+      }  
 
-      .Logo_Navbar {
-    max-height: 50px;
+    .Logo_Navbar {
+    max-height: 30px;
 }
-
-    .Logo_Navbar path {
+    
+  .Logo_Navbar path {
     max-height: 30px;
   }
 
