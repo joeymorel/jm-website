@@ -739,8 +739,7 @@ header {
     height: 250px;
     left: auto;
     right: 0;
-    transform: translateX(-100%);
-    margin-left: auto; /* Align to the right */
+    transform: translateX(calc(100% - 300px)); /* Adjust 300px according to the width of the image */
   }
   
   
