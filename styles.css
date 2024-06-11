@@ -736,8 +736,10 @@ header {
   }
 
   .Image1 {
-    align-self: self-end;
-}
+    height: 250px;  
+    right: 72%; /* Adjust the position */
+    left: auto; /* Reset the left position */
+  }
 
   
   .Image2 {
