@@ -740,6 +740,7 @@ header {
     left: auto;
     right: 0;
     transform: translateX(-100%);
+    margin-left: auto; /* Align to the right */
   }
   
   
