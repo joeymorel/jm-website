@@ -738,7 +738,8 @@ header {
   .Image1 {
     height: 250px;
     left: auto;
-    right: 0px; /* Set the right position to 0px */
+    right: 0;
+    transform: translateX(50%);
   }
 
   
