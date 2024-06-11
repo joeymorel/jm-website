@@ -736,10 +736,7 @@ header {
   }
 
   .Image1 {
-    height: 250px;
-    left: auto;
-    right: 0;
-    transform: translateX(calc(100% - 300px)); /* Adjust 300px according to the width of the image */
+   align-self: self-end;
   }
   
   
