@@ -39,6 +39,32 @@ body {
   margin-top: 110px;
 }
 
+.Concours {
+  background-color: #F77564;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center
+}
+
+.Concours span {
+  font-family: 'Author', serif;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: #F77564;
+  color: rgba(255,241,226,1);
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Concours span b {
+  background-color: #F77564;
+}
+
 .hero {
   margin-bottom: 100px;
 }
@@ -980,6 +1006,11 @@ header {
     margin-top: 65px;
   }
 
+  .Concours span {
+    font-size: 20px;
+    padding: 5px, 10px;
+  }
+    
   }
 
   .hamburger-menu {
