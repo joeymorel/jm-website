@@ -40,12 +40,14 @@ body {
 }
 
 .Concours {
+  position: fixed;
   background-color: #F77564;
   cursor: pointer;
   text-decoration: none;
   display: block;
   width: 100%;
-  text-align: center
+  text-align: center;
+  z-index: 500;
 }
 
 .Concours span {
