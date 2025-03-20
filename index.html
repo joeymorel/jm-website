@@ -240,7 +240,7 @@
                     </ul>
                 </div>
                 <div class="credits">
-                    <span>© 2024 Joey Morel</span>
+                    <span>© <span id="year"></span> Joey Morel</span>
                 </div>
             </footer>
         </div>
@@ -257,6 +257,10 @@
         const overlay = document.querySelector('.overlay')
         overlay.style.display = 'none'
   }
+</script>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </html>
