@@ -255,7 +255,7 @@
                 </div>
 
                 <div class="credits">
-                    <span>© 2024 Joey Morel</span>
+                    <span>© <span id="year"></span> Joey Morel</span>
                 </div>
             </footer>
         </div>
@@ -312,10 +312,11 @@ textarea.addEventListener("input", function() {
     textarea.style.height = Math.max(scrollHeight, initialHeight) + "px";
 });
 
-
-
-
-
 </script>
 
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+    
 </html>
