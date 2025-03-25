@@ -219,7 +219,7 @@ sup {
 .block {
   background-color: #1d251e;
   text-align: center;
-  padding: 50px;
+  padding: 50px 20px;
   position: relative;
 }
 
@@ -318,7 +318,7 @@ em {
 .Solution {
   position: relative;
   text-align: center;
-  padding: 0px 20px;
+  padding: 0px 10px;
   background-color: rgb(208, 193, 177);
   z-index: 20;
 }
@@ -471,7 +471,7 @@ em {
 .block-2 {
   background-color: #1d251e;
   text-align: center;
-  padding: 60px;
+  padding: 50px 20px;
   position: relative;
   z-index: 20;
 }
@@ -1531,6 +1531,10 @@ opacity: 60%;
 
 @media only screen and (max-width: 950px) {
 
+  header {
+    padding: 12px 15px;
+  }
+
   .nav__links {
     display: none;
   }
@@ -1538,6 +1542,7 @@ opacity: 60%;
   .hamburger-menu {
     display: initial;
     height: 25px;
+    padding-right: 20px;
   }
 
   .gallery {
@@ -1947,9 +1952,6 @@ opacity: 60%;
 
 @media only screen and (max-width: 575px) {
 
-  .footer .column:nth-child(2) {
-    display: none;
-  }
 
   .block-3{
     padding: 50px 20px;
@@ -2036,6 +2038,13 @@ opacity: 60%;
 
   .Brush-Highlight {
     display: none;
+  }
+
+  .hero h1 {
+    font-size: 28pt;
+  }
+  .hero p {
+    font-size: 20pt;
   }
 
 }
