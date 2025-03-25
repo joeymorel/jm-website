@@ -1740,6 +1740,10 @@ opacity: 60%;
     background-color: #f7c76c;
   }
 
+  .hero .hero-content, .Brush-Circle, .Brush-Highlight {
+    transform: translateY(-30px);
+  }
+
   .nav-container .cta {
     display: none;
   }
