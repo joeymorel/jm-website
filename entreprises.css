@@ -225,7 +225,7 @@ sup {
 
 .block .text-container {
   max-width: 800px;
-  margin: 80px auto;
+  margin: 20px auto;
   font-family: 'Manrope', sans-serif;
   font-weight: 300;
   color: rgba(255,241,226,1);
@@ -1719,7 +1719,7 @@ opacity: 60%;
     width: 90vw;
     top: 0;
     margin: 0;
-    padding: 100px 30px;
+    padding: 100px 0px;
     transform: translateY(-50%);
     transform: translateX(-50%);
     left: calc(50% - 0px);
