@@ -1836,6 +1836,10 @@ opacity: 60%;
     padding: 3px;
     margin: 0px auto;
   }
+  
+  .gallery img {
+    margin-bottom: -1px;
+  }
 
   .gallery .remove2 {
     display: none;
