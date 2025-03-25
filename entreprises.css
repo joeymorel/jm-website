@@ -44,7 +44,6 @@ sup {
 
 
 .Fixed-button {
-  display: none;
   position: fixed;
   font-family: 'Manrope', sans-serif;
   font-size: 16pt;
@@ -54,26 +53,35 @@ sup {
   padding: 15px 30px;
   bottom: 50px;
   right: 80px;
-  background-color:  rgb(242, 224, 205);
+  background-color: rgb(242, 224, 205);
   text-align: center;
   border: 2px solid transparent;
   border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+  transition: opacity 0.3s ease;
   box-sizing: border-box;
   color: #1f2620;
   z-index: 150;
   box-shadow:
-  0 1px 1px hsl(0deg 0% 0% / 0.06),
-  0 2px 2px hsl(0deg 0% 0% / 0.06),
-  0 4px 4px hsl(0deg 0% 0% / 0.06),
-  0 8px 8px hsl(0deg 0% 0% / 0.06),
-  0 16px 16px hsl(0deg 0% 0% / 0.06);
+    0 1px 1px hsl(0deg 0% 0% / 0.06),
+    0 2px 2px hsl(0deg 0% 0% / 0.06),
+    0 4px 4px hsl(0deg 0% 0% / 0.06),
+    0 8px 8px hsl(0deg 0% 0% / 0.06),
+    0 16px 16px hsl(0deg 0% 0% / 0.06);
 }
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.fading {
+  transition: opacity 0.15s ease;
+  opacity: 0.2;
+}
+
 
 .Fixed-button:hover {
   color: #f7c76c;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, .05);
   border-color:  #f7c76c;
   box-shadow:
   0 1px 1px hsl(0deg 0% 0% / 0.0),
@@ -84,7 +92,6 @@ sup {
 }
 
 .Fixed-button-consultation {
-  display: none;
   position: absolute;
   font-family: 'Manrope', sans-serif;
   font-size: 16pt;
@@ -1265,6 +1272,29 @@ opacity: 60%;
 
 }
 
+@media only screen and (max-width: 2000px) {
+
+  .Fixed-button {
+    font-size: 13pt;
+    padding: 10px 22px;
+    bottom: 50px;
+    right: 80px;
+  }
+
+}
+
+@media only screen and (max-width: 1800px) {
+
+  .Fixed-button {
+    font-size: 13pt;
+    padding: 10px 22px;
+    bottom: 40px;
+    right: 50px;
+  }
+
+}
+
+
 
 @media only screen and (max-width: 1250px) {
 
@@ -1416,8 +1446,8 @@ opacity: 60%;
     background: rgba(255, 243, 226, 1);
     border-radius: 20px;
     padding: 10px 18px;
-    width: 235px;
-    min-height: 470px;
+    width: 240px;
+    min-height: 450px;
     text-align: left;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -1442,8 +1472,8 @@ opacity: 60%;
 
   .features {
     font-size: 12pt;
-    padding-bottom: 3px;
-    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-top: 1px;
     text-indent: -14px;
     padding-left: 14px;
   }
@@ -1462,6 +1492,13 @@ opacity: 60%;
 
 
 @media only screen and (max-width: 1050px) {
+
+  .Fixed-button {
+    font-size: 13pt;
+    padding: 10px 22px;
+    bottom: 20px;
+    right: 20px;
+  }
 
   .pricing-container {
     max-width: 700px;
@@ -1692,6 +1729,17 @@ opacity: 60%;
 
 @media only screen and (max-width: 700px) {
 
+  .Fixed-button {
+    padding: 10px 22px;
+    margin: 0;
+    bottom: 20px;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    background-color: #f7c76c;
+  }
+
   .nav-container .cta {
     display: none;
   }
@@ -1771,7 +1819,7 @@ opacity: 60%;
 
 
 
-@media only screen and (max-width: 676px) {
+@media only screen and (max-width: 685px) {
 
   .Expertise {
     padding-bottom: 0px;

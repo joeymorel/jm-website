@@ -162,7 +162,7 @@
 
                 <div class="width"></div>
 
-                <a  class="Fixed-button" onclick="location.href='#forfaits'">Voir les forfaits</a>
+                <a id="dynamic-button" class="Fixed-button" onclick="location.href='#forfaits'">Voir les forfaits</a>
 
 
                 <section class="hero" id="hero">
@@ -318,8 +318,6 @@
 
 
                 <section class="block-2" id="block-2">
-
-                    <a  class="Fixed-button-consultation" onclick="location.href='#block-2'">Consultation gratuite</a>
 
                     <div class="text-container">
 
@@ -771,51 +769,71 @@
             if (scrollDownButton) {
                 scrollDownButton.addEventListener("click", function () {
                     window.scrollBy({
-                        top: window.innerHeight - 100, // Subtracting 100px for the navbar
+                        top: window.innerHeight - 100,
                         behavior: "smooth",
                     });
                 });
             }
         });
         
-        window.addEventListener("scroll", function () {
-    const button = document.querySelector(".Fixed-button");
-    const consultationButton = document.querySelector(".Fixed-button-consultation");
-    const block2 = document.querySelector(".forfaits");
 
-    if (!button || !consultationButton || !block2) return; // Prevent errors if elements are missing
-
-    const block2Top = block2.getBoundingClientRect().top + window.scrollY;
-    const block2Bottom = block2Top + block2.offsetHeight;
+        document.addEventListener("DOMContentLoaded", function() {
+  const button = document.getElementById("dynamic-button");
+  const forfaitsSection = document.getElementById("forfaits");
+  // States: "forfaits", "consultation", "hidden"
+  let currentState = "forfaits";
+  
+  function updateButton() {
+    const sectionTop = forfaitsSection.getBoundingClientRect().top;
+    const sectionBottom = forfaitsSection.getBoundingClientRect().bottom;
     const windowHeight = window.innerHeight;
-    const scrollPosition = window.scrollY + windowHeight;
-    const bottomThreshold = window.innerHeight - 50; // 50px from the bottom
-
-    // Logic for the first button
-    if (scrollPosition >= block2Top) {
-        button.style.position = "absolute";
-        button.style.bottom = `${block2.offsetHeight + 550}px`; // Adjust if needed
+    
+    // Determine the new state:
+    // If the bottom of the section is at or above the bottom of the viewport, hide button.
+    // Else if the top is at or above the bottom, switch to "consultation".
+    // Otherwise, remain "forfaits".
+    let newState;
+    if (sectionBottom <= windowHeight) {
+      newState = "hidden";
+    } else if (sectionTop <= windowHeight) {
+      newState = "consultation";
     } else {
-        button.style.position = "fixed";
-        button.style.bottom = "50px";
+      newState = "forfaits";
     }
-
-    // Logic for the consultation button
-    const buttonTop = consultationButton.getBoundingClientRect().top + window.scrollY;
-
-    if (window.scrollY + windowHeight >= block2Top + 162) {
-        // If button reaches 50px from the bottom, fix it
-        consultationButton.style.position = "fixed";
-        consultationButton.style.bottom = "50px";
-        consultationButton.style.top = "auto";
-    } else if (window.scrollY + 0 <= block2Top) {
-        // If scrolled back up past its original position, reset it
-        consultationButton.style.position = "absolute";
-        consultationButton.style.top = "50px";
-        consultationButton.style.bottom = "auto";
+    
+    if (newState !== currentState) {
+      if (newState === "hidden") {
+        // Fade out to hidden
+        button.classList.remove("fading");
+        button.classList.add("hidden");
+      } else {
+        // Ensure button is visible if coming from hidden
+        if (currentState === "hidden") {
+          button.classList.remove("hidden");
+          // Force reflow (optional) to ensure transition
+          void button.offsetWidth;
+        }
+        // Fade between texts without leaving a blank state:
+        button.classList.add("fading");
+        setTimeout(() => {
+          if (newState === "forfaits") {
+            button.textContent = "Voir les forfaits";
+            button.setAttribute("onclick", "location.href='#forfaits'");
+          } else if (newState === "consultation") {
+            button.textContent = "Consultation gratuite";
+            button.setAttribute("onclick", "location.href='#contact'");
+          }
+          button.classList.remove("fading");
+        }, 150);
+      }
+      currentState = newState;
     }
+  }
+  
+  window.addEventListener("scroll", updateButton);
+  updateButton(); // run on load in case the page is pre-scrolled
 });
-        
+
 </script>
         
 <script>
@@ -836,10 +854,8 @@
         
         e.target.value = formattedValue;
     });
-    </script>
-  
 
-  <script>
+
   document.querySelectorAll('.faq-question').forEach((item) => {
     item.addEventListener('click', () => {
         const answer = item.nextElementSibling;
