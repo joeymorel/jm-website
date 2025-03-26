@@ -1212,7 +1212,7 @@ cursor: pointer;
 padding-left: 0px;
 }
 
-.footer h3 {
+.footer h3 a {
 margin-bottom: 10px;
 font-size: 24px;
 transition: color 0.3s ease 0s;
