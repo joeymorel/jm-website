@@ -4,7 +4,7 @@
 
 	<url>
 		<loc>https://joeymorel.com/</loc>
-		<lastmod>2024-06-04</lastmod>
+		<lastmod>2025-03-26</lastmod>
 		<priority>1.0</priority>
 		<changefreq>monthly</changefreq>
 	</url>
@@ -19,6 +19,13 @@
 	<url>
 		<loc>https://joeymorel.com/graphisme</loc>
 		<lastmod>2024-06-04</lastmod>
+		<priority>0.9</priority>
+		<changefreq>monthly</changefreq>
+	</url>
+
+	<url>
+		<loc>https://joeymorel.com/entreprises</loc>
+		<lastmod>2025-03-26</lastmod>
 		<priority>0.9</priority>
 		<changefreq>monthly</changefreq>
 	</url>
