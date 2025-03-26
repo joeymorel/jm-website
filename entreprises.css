@@ -78,59 +78,19 @@ sup {
   opacity: 0.2;
 }
 
-
-.Fixed-button:hover {
-  color: #f7c76c;
-  background-color: rgba(0, 0, 0, .05);
-  border-color:  #f7c76c;
-  box-shadow:
-  0 1px 1px hsl(0deg 0% 0% / 0.0),
-  0 2px 2px hsl(0deg 0% 0% / 0.0),
-  0 4px 4px hsl(0deg 0% 0% / 0.0),
-  0 8px 8px hsl(0deg 0% 0% / 0.0),
-  0 16px 16px hsl(0deg 0% 0% / 0.0);
-}
-
-.Fixed-button-consultation {
-  position: absolute;
-  font-family: 'Manrope', sans-serif;
-  font-size: 16pt;
-  font-weight: 400;
-  text-decoration: none;
-  margin-left: 20px;
-  padding: 15px 30px;
-  top: 50px;
-  right: 80px;
-  background-color:  rgb(242, 224, 205);
-  text-align: center;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
-  box-sizing: border-box;
-  color: #1f2620;
-  z-index: 150;
-  box-shadow:
-  0 1px 1px hsl(0deg 0% 0% / 0.06),
-  0 2px 2px hsl(0deg 0% 0% / 0.06),
-  0 4px 4px hsl(0deg 0% 0% / 0.06),
-  0 8px 8px hsl(0deg 0% 0% / 0.06),
-  0 16px 16px hsl(0deg 0% 0% / 0.06);
-}
-
-.Fixed-button-consultation:hover {
-  color: rgb(239, 220, 199);
-  background-color: transparent;
-  border-color:  rgb(239, 220, 199);
-  box-shadow:
-  0 1px 1px hsl(0deg 0% 0% / 0.0),
-  0 2px 2px hsl(0deg 0% 0% / 0.0),
-  0 4px 4px hsl(0deg 0% 0% / 0.0),
-  0 8px 8px hsl(0deg 0% 0% / 0.0),
-  0 16px 16px hsl(0deg 0% 0% / 0.0);
-  z-index: 150;
-}
-  
+@media (hover: hover) {
+  .Fixed-button:hover {
+    color: #f7c76c;
+    background-color: rgba(0, 0, 0, .05);
+    border-color:  #f7c76c;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.0),
+    0 2px 2px hsl(0deg 0% 0% / 0.0),
+    0 4px 4px hsl(0deg 0% 0% / 0.0),
+    0 8px 8px hsl(0deg 0% 0% / 0.0),
+    0 16px 16px hsl(0deg 0% 0% / 0.0);
+  }
+ } 
 
 
 
@@ -744,10 +704,13 @@ margin-top: 20px;
   z-index: 150;
 }
 
-.primary-button:hover {
-  color: #f7c76c;
-  background-color: transparent;
-  border-color: #f7c76c;
+
+@media (hover: hover) {
+  .primary-button:hover {
+    color: #f7c76c;
+    background-color: transparent;
+    border-color: #f7c76c;
+  }
 }
 
 .secondary-button {
@@ -769,10 +732,12 @@ margin-top: 20px;
   z-index: 150;
 }
   
-.secondary-button:hover {
+@media (hover: hover) {
+  .secondary-button:hover {
   color: #f7c76c;
   background-color: transparent;
   border-color:  #f7c76c;
+  }
 }
 
 
@@ -937,12 +902,13 @@ textarea:focus {
   transform: translateX(-50%);
 }
 
-.contact-form button:hover {
-  color: #f7c76c;
-  background-color: transparent;
-  border-color:  #f7c76c;
+@media (hover: hover) {
+  .contact-form button:hover {
+    color: #f7c76c;
+    background-color: transparent;
+    border-color:  #f7c76c;
+  }
 }
-
 
 
 
