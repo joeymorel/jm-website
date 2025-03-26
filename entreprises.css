@@ -1707,7 +1707,7 @@ opacity: 60%;
   }
 
   .hero .hero-content, .Brush-Circle, .Brush-Highlight {
-    transform: translateY(-30px);
+    transform: translateY(-60px);
   }
 
   .nav-container .cta {
