@@ -183,7 +183,7 @@ sup {
 
 .hero-content {
   color: rgb(239, 220, 199);
-  width: fit-content;
+  width: 600px;
   z-index: 100;
   padding: 50px 20px;
 }
