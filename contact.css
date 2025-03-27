@@ -278,6 +278,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  header {
+    padding: 12px 15px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .ctaButton:nth-child(1) {
     margin-right: 5px;
