@@ -1037,6 +1037,9 @@ header {
 }
 
 @media only screen and (max-width: 950px) {
+  header {
+    padding: 12px 15px;
+  }
   .nav__links {
     display: none;
   }
