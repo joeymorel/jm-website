@@ -315,12 +315,12 @@ header {
   overflow: visible;
   padding: 20px;
   background-color: #000;
-
 }
 .hero-content {
   color: rgba(255,241,226,1);
   max-width: 800px;
   z-index: 100;
+  transform: translateY(-20px);
 }
 .hero-content h1 {
   font-size: 35pt;
