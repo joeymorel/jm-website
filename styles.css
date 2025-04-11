@@ -11,7 +11,7 @@ body, html {
   min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: rgba(121, 135, 125, 1);}
+  background-color: #000}
 
 ::selection {
   color: #1f2620;
