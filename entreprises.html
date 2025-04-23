@@ -525,6 +525,7 @@
                     <form action="https://api.web3forms.com/submit" method="POST">
             
                         <input type="hidden" name="access_key" value="64ef9c7d-519c-48a8-817d-0d77818c4afd">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px;">
             
                         <div class="form-row">
                             <div class="form-group">
@@ -569,8 +570,9 @@
                             <textarea id="message" name="message" rows="4" placeholder="Quels sont tes principaux services, quels sont tes plus grands défis, qui est ta clientèle cible&thinsp;?"></textarea>
                         </div>
 
+                        <div class="h-captcha" data-sitekey="90c22172-2e8c-4b7a-85ee-fbda71549cc4"></div>
+                        
                         <button type="submit" class="submit-butto">Envoyer</button>
-            
             
                     </form>
                 </div>
@@ -764,6 +766,8 @@
                 </footer>
         </div>
 
+            <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+            
     </body>
 
     <script>
