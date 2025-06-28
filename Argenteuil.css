@@ -59,12 +59,18 @@ header {
   padding: 10px 50px;
   z-index: 500;
   transition: background-color 0.3s;
+  background-color: transparent;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-
-  background-color: transparent; /* Keep transparent so only blur shows */
 }
 
 .scrolled {
