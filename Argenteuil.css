@@ -370,7 +370,7 @@ header::before {
   font-size: 14pt;
   font-weight: 400;
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 8px 22pt;
   top: 20px;
   bottom: 50px;
   background-color: rgb(242, 224, 205);
@@ -408,7 +408,7 @@ header::before {
   }
   .button {
     font-size: 11pt;
-    padding: 4px 15px;
+    padding: 6px 18px;
     top: 10px;
   }
 }
