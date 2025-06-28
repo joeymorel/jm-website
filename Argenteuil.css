@@ -343,6 +343,15 @@ header {
   object-fit: cover;
   filter: brightness(70%);
 }
+.bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(70%);
+}
 .button {
   position: relative;
   font-family: 'Manrope', sans-serif;
