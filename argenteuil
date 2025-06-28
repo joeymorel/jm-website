@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MRC Argenteuil</title>
+    <meta name="description" content="Photos MRC Argenteuil">
+    <meta name="keywords" content="photographie, photo">
+    <meta property="og:image" content="Images/MRC.jpg">
+    <link rel="canonical" href="https://joeymorel.com/argenteuil">
+
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/icon.png">
+    <link rel="apple-touch-icon" href="Images/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=author@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="your-integrity-hash" crossorigin="anonymous">
+    <link rel="stylesheet" href="Argenteuil.css">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WHMPWMFB');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW570VK8RN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EW570VK8RN');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://joeymorel.com"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://joeymorel.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Photographie",
+          "item": "https://joeymorel.com/photographie"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Graphisme",
+          "item": "https://joeymorel.com/graphisme"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://joeymorel.com/contact"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1005597137772840');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1005597137772840&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHMPWMFB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        
+    <header>
+        <a href="./" class="logo-link">
+            <img src="Images/JoeyMorel-Logo.svg" alt="Logo" class="Logo_Navbar">
+        </a>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="./">Accueil</a></li>
+                    <li><a href="./photographie">Photographie</a></li>
+                    <li><a href="./graphisme">Graphisme</a></li>
+                    <li><a href="./entreprises">Entreprises</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="./contact">Contact</a>
+        </div>
+        
+        <a onclick="showoverlay();return false" href=""><svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+     </header>
+
+    <div class="overlay">
+        <a onclick="hideoverlay();return false" class="close"><svg xmlns="http://www.w3.org/2000/svg" height="35" width="30" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></a>
+        <div class="overlay__content">
+            <a class="Accueil" href="./">Accueil</a>
+            <a href="./photographie">Photographie</a>
+            <a href="./graphisme">Graphisme</a>
+            <a class="Entreprises" href="./entreprises" style="cursor: pointer;">Entreprises</a>
+            <a  class="cta-overlay" href="./contact">Contact</a>
+            <div class="icons">
+                <a href="https://www.instagram.com/jm.graphiste/" target="_blank" class="social-icon"><i class="fab fa-instagram" ></i></a>
+                <a href="https://www.facebook.com/jm.graphiste/" target="_blank" class="social-icon"><i class="fab fa-facebook" ></i></a>
+                <a href="https://www.linkedin.com/company/joeymorelgraphistephotographe/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in" ></i></a>    
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="content">
+
+        <div class="width"></div>
+  
+
+        <section class="hero">
+            <div class="hero-content">
+                <p style="filter: drop-shadow(0 0 5px rgba(255, 243, 226, 0.6));">Diner d'accueil</p>
+                <h1 style="filter: drop-shadow(0 0 5px rgba(255, 243, 226, 0.6));">MRC Argenteuil</h1>
+                <a  class="button" href="https://joeymorel.pic-time.com/3upldsVXrI7B3">Voir les images</a>
+            </div>
+            <img loading="lazy"  src="Images/MRC-Argenteuil.jpg" alt="MRC Argenteuil">
+        </section>
+
+
+        <footer class="footer">
+            <div class="column">
+                <a href="./" class="logo-link">
+                    <img src="Images/JoeyMorel-Logo.svg" alt="Logo" class="Logo_Footer">
+                </a>
+            </div>
+            <div class="column">
+                <h3><a href="./">Acceuil</a></h3>
+                <ul>
+                    <li><a href="./photographie">Photographie</a></li>
+                    <li><a href="./graphisme">Graphisme</a></li>
+                    <li><a href="./entreprises">Entreprises</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3><a href="./contact">Contact</a></h3>
+                <ul>
+                    <li><a href="tel:5794886162">579 488-6162</a></li>
+                    <li><a href="mailto:joeyorel@hotmail.com">joeymorel@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul class="social">
+                    <a href="https://www.instagram.com/jm.graphiste/" target="_blank" class="social-icon"><i class="fab fa-instagram" ></i></a>
+                    <a href="https://www.facebook.com/jm.graphiste/" target="_blank" class="social-icon"><i class="fab fa-facebook" ></i></a>
+                    <a href="https://www.linkedin.com/company/joeymorelgraphistephotographe/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in" ></i></a>    
+                </ul>
+            </div>
+            <div class="credits">
+                <span>© <span id="year"></span> Joey Morel</span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+
+<script>
+
+function showoverlay(){
+        const overlay = document.querySelector('.overlay')
+        overlay.style.display = 'flex'
+  }
+
+  function hideoverlay(){
+        const overlay = document.querySelector('.overlay')
+        overlay.style.display = 'none'
+  }
+
+  const myNav = document.getElementById('header')
+
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
+document.getElementById("phone").addEventListener("input", function (e) {
+    let value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+    if (value.length > 10) value = value.slice(0, 10); // Limit to 10 digits
+
+    let formattedValue = value;
+    if (value.length >= 7) {
+        formattedValue = `${value.slice(0, 3)} ${value.slice(3, 6)}-${value.slice(6)}`;
+    } else if (value.length >= 4) {
+        formattedValue = `${value.slice(0, 3)} ${value.slice(3)}`;
+    }
+    
+    e.target.value = formattedValue;
+});
+
+
+</script>
+
+</html>
