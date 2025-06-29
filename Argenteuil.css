@@ -339,11 +339,11 @@ header::before {
   font-family: 'Manrope', sans-serif;
   font-weight: 300;
   margin-bottom: 15px;
-  margin-top: -20px;
+  margin-top: -30px;
   max-width: 700px;
 }
 .hero-content p {
-  font-size: 22pt;
+  font-size: 18pt;
   font-family: 'Manrope', sans-serif;
   font-weight: 300;
 }
@@ -401,7 +401,7 @@ header::before {
     transform: translateY(-40px);
   }
   .hero-content h1 {
-    font-size: 24pt;
+    font-size: 16pt;
   }
   .hero-content p {
     font-size: 18pt;
