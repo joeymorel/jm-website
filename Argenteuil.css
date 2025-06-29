@@ -215,8 +215,8 @@ header::before {
 
 .overlay .close {
   position: fixed;
-  margin-top: 23px;
-  margin-right: 9%;
+  margin-top: 10px;
+  margin-right: 10px;
   padding: 5px;
   fill: rgba(255, 243, 226, 1);
   background-color: transparent;
@@ -401,7 +401,7 @@ header::before {
     transform: translateY(-40px);
   }
   .hero-content h1 {
-    font-size: 16pt;
+    font-size: 24pt;
   }
   .hero-content p {
     font-size: 18pt;
