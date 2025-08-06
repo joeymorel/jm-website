@@ -157,7 +157,7 @@ sup {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(100%);
+  filter: brightness(70%);
   z-index: -1;
 }
 
@@ -1101,7 +1101,6 @@ header {
   align-items: center;
   padding: 10px 50px;
   z-index: 500;
-  background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s;
 }
 
