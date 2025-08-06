@@ -1101,7 +1101,7 @@ header {
   align-items: center;
   padding: 10px 50px;
   z-index: 500;
-  background-color: rgba(31, 38, 32, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s;
 }
 
