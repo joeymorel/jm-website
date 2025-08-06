@@ -551,6 +551,11 @@ header::before {
   }
 }
 
+.Logo_Footer {
+    margin-right: auto;
+    padding-right: 0px;
+}
+
 @media only screen and (max-width: 400px) {
   .footer {
     flex-direction: column;
