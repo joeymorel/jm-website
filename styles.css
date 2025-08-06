@@ -141,7 +141,7 @@ sup {
   align-items: center;
   text-align: center;
   position: relative;
-  overflow: hidden; /* Ensures the pseudo-element stays within bounds */
+  overflow: hidden;
   padding: 20px;
 }
 
@@ -152,12 +152,12 @@ sup {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('Images/Banner-3.jpg');
+  background-image: url('Images/MR-Fiancailles.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(100%); /* Apply blur and brightness */
-  z-index: -1; /* Places it behind content */
+  filter: brightness(100%);
+  z-index: -1;
 }
 
 .background-gallery {
@@ -165,9 +165,9 @@ sup {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust image sizes */
-  grid-auto-rows: 250px; /* Adjust row height */
-  gap: 2px; /* Small gap between images */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 2px;
   position: absolute;
   top: 0;
   left: 0;
