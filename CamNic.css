@@ -344,7 +344,7 @@ header::before {
   font-size: 22pt;
   font-family: 'Manrope', sans-serif;
   font-weight: 300;
-  margin-top: 0;
+  margin-top: -10px;
 }
 .hero img {
   position: absolute;
