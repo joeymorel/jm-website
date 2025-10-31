@@ -2191,10 +2191,10 @@ opacity: 60%;
   }
 
   .hero h1 {
-    font-size: 28pt;
+    font-size: 23pt;
   }
   .hero p {
-    font-size: 20pt;
+    font-size: 16pt;
   }
 
 }
@@ -2376,3 +2376,4 @@ footer {
   padding: 60px 10%;
   background-color: #24252a;
 }
+
