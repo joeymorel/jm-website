@@ -471,7 +471,7 @@ em {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  z-index: 1;
   filter: brightness(90%);
 }
 
@@ -501,6 +501,16 @@ em {
   0 4px 4px hsl(0deg 0% 0% / 0.1),
   0 8px 8px hsl(0deg 0% 0% / 0.1),
   0 16px 16px hsl(0deg 0% 0% / 0.1);
+}
+.bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(90%);
+}
 
 .Brush-Star {
   position: absolute;
