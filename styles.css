@@ -23,7 +23,15 @@ body, html {
     background:  #f4d59b;
 }
 
-
+.bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(90%);
+}
 
 body {
   position: relative;
@@ -184,7 +192,7 @@ sup {
 
 .hero-content {
   color: rgb(239, 220, 199);
-  width: 600px;
+  width: 550px;
   z-index: 100;
   padding: 50px 20px;
 }
